@@ -6,7 +6,6 @@
 composer.lock
 /coverage
 /data
-php-cs-fixer.php
 phpunit.xml
 psalm.xml
 /site
