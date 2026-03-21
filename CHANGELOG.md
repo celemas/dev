@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.0.0](https://github.com/duonrun/dev/releases/tag/3.0.0) (2026-03-21)
+
+### Breaking Changes
+
+- Update `phpunit/phpunit` requirement to `^13.0`.
+- Update `ernst/coverlyzer` requirement to `^0.3`.
+- Remove `friendsofphp/php-cs-fixer`.
+
+### Added
+
+- Add `carthage-software/mago`
+
+### Changed
+
+- Update `vimeo/psalm` requirement to `^6.16`.
+
 ## [2.5.0](https://github.com/duonrun/dev/releases/tag/2.5.0) (2026-01-30)
 
 ### Breaking Changes
