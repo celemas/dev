@@ -2,11 +2,11 @@
 	"name": "duon/dev",
 	"description": "Shared development settings and tools for all Duon projects",
 	"type": "library",
-	"homepage": "https://duon.run/dev",
+	"homepage": "https://duon.sh/dev",
 	"authors": [
 		{
 			"name": "Ernst",
-			"email": "ernst@duon.run"
+			"email": "ernst@duon.sh"
 		}
 	],
 	"require": {
