@@ -1,12 +1,12 @@
 {
-	"name": "duon/dev",
-	"description": "Shared development settings and tools for all Duon projects",
+	"name": "celemas/dev",
+	"description": "Shared development settings and tools for all Celemas projects",
 	"type": "library",
-	"homepage": "https://duon.sh/dev",
+	"homepage": "https://celemas.dev/dev",
 	"authors": [
 		{
 			"name": "Ernst",
-			"email": "ernst@duon.sh"
+			"email": "ernst@celemas.dev"
 		}
 	],
 	"require": {
@@ -20,7 +20,7 @@
 	"license": "MIT",
 	"autoload": {
 		"psr-4": {
-			"Duon\\Development\\": "src/"
+			"Celemas\\Development\\": "src/"
 		}
 	},
 	"scripts": {

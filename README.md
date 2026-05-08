@@ -1,9 +1,9 @@
-# Duon Development Settings and Tools
+# Celemas Development Settings and Tools
 
 ## Installation
 
 ```sh
-composer require duon/dev
+composer require celemas/dev
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ Add the following to your `.php-cs-fixer.dist.php`:
 declare(strict_types=1);
 
 $finder = PhpCsFixer\Finder::create()->in([__DIR__ . '/src', __DIR__ . '/tests']);
-$config = new Duon\Development\PhpCsFixer\Config();
+$config = new Celemas\Development\PhpCsFixer\Config();
 
 return $config->setFinder($finder);
 ```
@@ -45,10 +45,10 @@ Add the sync command to your project's `composer.json` file. It will install the
 {
 	"scripts": {
 		"post-install-cmd": [
-			"Duon\\Development\\Config::sync"
+			"Celemas\\Development\\Config::sync"
 		],
 		"post-update-cmd": [
-			"Duon\\Development\\Config::sync"
+			"Celemas\\Development\\Config::sync"
 		]
 	}
 }
@@ -63,12 +63,12 @@ To also install `.prettierrc`, add the `prettier` script alongside `sync`.
 {
 	"scripts": {
 		"post-install-cmd": [
-			"Duon\\Development\\Config::sync",
-			"Duon\\Development\\Config::prettier"
+			"Celemas\\Development\\Config::sync",
+			"Celemas\\Development\\Config::prettier"
 		],
 		"post-update-cmd": [
-			"Duon\\Development\\Config::sync",
-			"Duon\\Development\\Config::prettier"
+			"Celemas\\Development\\Config::sync",
+			"Celemas\\Development\\Config::prettier"
 		]
 	}
 }
