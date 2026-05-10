@@ -2,7 +2,7 @@
 	"name": "celemas/dev",
 	"description": "Shared development settings and tools for all Celemas projects",
 	"type": "library",
-	"homepage": "https://celemas.dev/dev",
+	"homepage": "https://celemas.dev",
 	"authors": [
 		{
 			"name": "Ernst",
