@@ -2,6 +2,8 @@
 
 ## [Unreleased](https://github.com/celemas/dev/compare/4.0.0...HEAD)
 
+No notable changes since the last release.
+
 ## [4.0.0](https://github.com/celemas/dev/releases/tag/4.0.0) (2026-05-08)
 
 ### Breaking Changes
