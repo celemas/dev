@@ -1,14 +1,20 @@
 # Changelog
 
-## [Unreleased](https://github.com/celemas/dev/compare/4.0.0...HEAD)
+## [Unreleased](https://github.com/celemas/dev/compare/4.1.0...HEAD)
 
 No notable changes since the last release.
+
+## [4.1.0](https://github.com/celemas/dev/releases/tag/4.1.0) (2026-05-12)
+
+### Added
+
+- Shared markdownlint config
 
 ## [4.0.0](https://github.com/celemas/dev/releases/tag/4.0.0) (2026-05-08)
 
 ### Breaking Changes
 
-- Rename package metadata, root namespace, repository URLs, homepage, and contact email to Celemas.
+- Rename package metadata, root namespace, repository URLs, homepage, and contact email to Duon.
 
 ## [3.0.1](https://github.com/celemas/dev/releases/tag/3.0.1) (2026-04-29)
 
@@ -18,7 +24,7 @@ No notable changes since the last release.
 
 ### Changed
 
-- Update Composer metadata to use `celemas.dev` and release links to use the `celemas` GitHub organization.
+- Update Composer metadata to use `duon.sh` and release links to use the `duoncode` GitHub organization.
 
 ### Fixed
 
@@ -44,7 +50,7 @@ No notable changes since the last release.
 
 ### Breaking Changes
 
-- Removed configuration sync via `Celemas\Development\Config` (including `Config::sync()` and `Config::prettier()`).
+- Removed configuration sync via `Duon\Development\Config` (including `Config::sync()` and `Config::prettier()`).
 - Removed the bundled config templates under `cfg/`.
 
 ### Changed
@@ -74,7 +80,7 @@ No notable changes since the last release.
 
 ### Breaking Changes
 
-- Rename `ConfigSync` to `Config` and move it to the `Celemas\\Development` namespace.
+- Rename `ConfigSync` to `Config` and move it to the `Duon\\Development` namespace.
 - Stop supporting config selection via Composer script arguments; use dedicated methods like `Config::sync()` and `Config::prettier()`.
 
 ### Added
@@ -130,7 +136,7 @@ No notable changes since the last release.
 
 ### Changed
 
-- Update root namespace to `Celemas`
+- Update root namespace to `Duon`
 
 ## [1.1.4](https://github.com/celemas/dev/releases/tag/1.1.4) (2024-08-24)
 
@@ -188,4 +194,4 @@ No notable changes since the last release.
 
 ### Added
 
-- php-cs-fixer rules via `Celemas\Development\PhpCsFixer\Config`.
+- php-cs-fixer rules via `Duon\Development\PhpCsFixer\Config`.
