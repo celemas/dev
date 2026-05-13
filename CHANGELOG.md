@@ -1,8 +1,14 @@
 # Changelog
 
-## [Unreleased](https://github.com/celemas/dev/compare/4.1.0...HEAD)
+## [Unreleased](https://github.com/celemas/dev/compare/4.2.0...HEAD)
 
 No notable changes since the last release.
+
+## [4.2.0](https://github.com/celemas/dev/releases/tag/4.2.0) (2026-05-13)
+
+### Changed
+
+- Pin mago version to v1.26.0.
 
 ## [4.1.0](https://github.com/celemas/dev/releases/tag/4.1.0) (2026-05-12)
 
