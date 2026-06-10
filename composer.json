@@ -24,7 +24,13 @@
 		}
 	},
 	"scripts": {
-		"mdlint": "markdownlint-cli2 ./*.md"
+		"lint": "./vendor/bin/mago fmt --check && ./vendor/bin/mago lint",
+		"docs:lint": "npx markdownlint-cli2@0.22.1 --config config/markdownlint.jsonc README.md CHANGELOG.md LICENSE.md",
+		"mdlint": "composer docs:lint",
+		"ci": [
+			"composer lint",
+			"composer docs:lint"
+		]
 	},
 	"bin": [
 		"bin/docs-test-runner"
