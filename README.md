@@ -1,5 +1,10 @@
 # Celemas Development Settings and Tools
 
+<!-- prettier-ignore-start -->
+[![ci](https://codeberg.org/celemas/dev/badges/workflows/ci.yml/badge.svg?style=flat&logo=codeberg&logoColor=white&label=ci)](https://codeberg.org/celemas/dev/actions)
+[![Software License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
+<!-- prettier-ignore-end -->
+
 ## Installation
 
 ```sh
