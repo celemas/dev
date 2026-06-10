@@ -1,0 +1,24 @@
+name: ci
+
+on:
+  push:
+
+jobs:
+  ci:
+    runs-on: ci-base
+    steps:
+      - name: Checkout repo
+        uses: https://code.forgejo.org/actions/checkout@v5
+
+      - name: Install packages with composer
+        run: composer install --prefer-dist --no-interaction
+        env:
+          COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.GH_TOKEN }}"}}'
+
+      - name: Run PHP lint checks
+        run: composer lint
+
+      - name: Run Markdown lint checks
+        run: composer docs:lint
+        env:
+          npm_config_yes: 'true'
