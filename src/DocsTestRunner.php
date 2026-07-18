@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Celemas\Development;
+namespace Celema\Development;
 
 class DocsTestRunner
 {

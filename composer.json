@@ -1,12 +1,12 @@
 {
-	"name": "celemas/dev",
-	"description": "Shared development settings and tools for all Celemas projects",
+	"name": "celema/dev",
+	"description": "Shared development settings and tools for all Celema projects",
 	"type": "library",
-	"homepage": "https://celemas.dev",
+	"homepage": "https://celema.dev",
 	"authors": [
 		{
 			"name": "Ernst",
-			"email": "ernst@celemas.dev"
+			"email": "ernst@celema.dev"
 		}
 	],
 	"require": {
@@ -20,7 +20,7 @@
 	"license": "MIT",
 	"autoload": {
 		"psr-4": {
-			"Celemas\\Development\\": "src/"
+			"Celema\\Development\\": "src/"
 		}
 	},
 	"scripts": {
