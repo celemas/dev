@@ -1,14 +1,14 @@
-# Celemas Development Settings and Tools
+# Celema Development Settings and Tools
 
 <!-- prettier-ignore-start -->
-[![ci](https://codeberg.org/celemas/dev/badges/workflows/ci.yml/badge.svg?style=flat&logo=codeberg&logoColor=white&label=ci)](https://codeberg.org/celemas/dev/actions)
+[![ci](https://codeberg.org/celema/dev/badges/workflows/ci.yml/badge.svg?style=flat&logo=codeberg&logoColor=white&label=ci)](https://codeberg.org/celema/dev/actions)
 [![Software License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 <!-- prettier-ignore-end -->
 
 ## Installation
 
 ```sh
-composer require celemas/dev
+composer require celema/dev
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ Add the following to your `.php-cs-fixer.dist.php`:
 declare(strict_types=1);
 
 $finder = PhpCsFixer\Finder::create()->in([__DIR__ . '/src', __DIR__ . '/tests']);
-$config = new Celemas\Development\PhpCsFixer\Config();
+$config = new Celema\Development\PhpCsFixer\Config();
 
 return $config->setFinder($finder);
 ```
@@ -49,15 +49,10 @@ Add the sync command to your project's `composer.json` file. It will install the
 ```json
 {
 	"scripts": {
-		"post-install-cmd": [
-			"Celemas\\Development\\Config::sync"
-		],
-		"post-update-cmd": [
-			"Celemas\\Development\\Config::sync"
-		]
+		"post-install-cmd": ["Celema\\Development\\Config::sync"],
+		"post-update-cmd": ["Celema\\Development\\Config::sync"]
 	}
 }
-
 ```
 
 ### 2. Add Prettier Config (Optional)
@@ -68,12 +63,12 @@ To also install `.prettierrc`, add the `prettier` script alongside `sync`.
 {
 	"scripts": {
 		"post-install-cmd": [
-			"Celemas\\Development\\Config::sync",
-			"Celemas\\Development\\Config::prettier"
+			"Celema\\Development\\Config::sync",
+			"Celema\\Development\\Config::prettier"
 		],
 		"post-update-cmd": [
-			"Celemas\\Development\\Config::sync",
-			"Celemas\\Development\\Config::prettier"
+			"Celema\\Development\\Config::sync",
+			"Celema\\Development\\Config::prettier"
 		]
 	}
 }
