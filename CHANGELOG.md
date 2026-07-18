@@ -1,8 +1,11 @@
 # Changelog
 
-## [Unreleased](https://codeberg.org/celemas/dev/compare/4.2.0...HEAD)
+## [Unreleased](https://codeberg.org/celema/dev/compare/4.2.0...HEAD)
 
-No notable changes since the last release.
+### Breaking Changes
+
+- Rename the package from `celemas/dev` to `celema/dev` and the root namespace from `Celemas\Development` to `Celema\Development`.
+- Move the source repository to `codeberg.org/celema/dev` and update the project domain and contact email.
 
 ## [4.2.0](https://codeberg.org/celemas/dev/src/tag/4.2.0) (2026-05-13)
 
@@ -180,21 +183,21 @@ No notable changes since the last release.
 ### Added
 
 - php-cs-fixer rules:
-    - `ordered_imports`: set `sort_algorithm` to `alpha`.
+  - `ordered_imports`: set `sort_algorithm` to `alpha`.
 
 ## [1.0.1](https://codeberg.org/celemas/dev/src/tag/1.0.1) (2023-10-02)
 
 ### Added
 
 - php-cs-fixer rules:
-    - `declare_strict_types` enabled.
-    - Force blank line before `if` and loops.
-    - `no_useless_else` enabled.
-    - `no_useless_return` enabled.
-    - `no_superfluous_elseif` enabled.
-    - `method_chaining_indentation` enabled.
-    - `explicit_string_variable` enabled.
-    - Update `class_attributes_separation` settings: No line between `const` declaration, one line between methods.
+  - `declare_strict_types` enabled.
+  - Force blank line before `if` and loops.
+  - `no_useless_else` enabled.
+  - `no_useless_return` enabled.
+  - `no_superfluous_elseif` enabled.
+  - `method_chaining_indentation` enabled.
+  - `explicit_string_variable` enabled.
+  - Update `class_attributes_separation` settings: No line between `const` declaration, one line between methods.
 
 ## [1.0.0](https://codeberg.org/celemas/dev/src/tag/1.0.0) (2023-10-02)
 
