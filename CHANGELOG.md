@@ -2,7 +2,10 @@
 
 ## [Unreleased](https://codeberg.org/celema/dev/compare/5.0.0...HEAD)
 
-No notable changes since the last release.
+### Removed
+
+- Remove the `ci` Composer script. It only aggregated `lint` and `docs:lint`; run those directly.
+- Remove the `mdlint` Composer script alias. Use `docs:lint` instead.
 
 ## [5.0.0](https://codeberg.org/celema/dev/src/tag/5.0.0) (2026-07-18)
 
