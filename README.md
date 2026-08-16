@@ -8,7 +8,7 @@
 ## Installation
 
 ```sh
-composer require celema/dev
+composer require --dev celema/dev
 ```
 
 ## Usage
