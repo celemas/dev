@@ -15,7 +15,7 @@
 		"phpunit/phpunit": "^13.0",
 		"psy/psysh": "*",
 		"vimeo/psalm": "^6.16",
-		"carthage-software/mago": "1.26.0"
+		"carthage-software/mago": "1.47.2"
 	},
 	"license": "MIT",
 	"autoload": {
