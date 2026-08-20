@@ -11,6 +11,8 @@
 composer require --dev celema/dev
 ```
 
+Declare development tools such as Mago, Psalm, and PHPUnit directly in the consuming project's `require-dev` section.
+
 ## Usage
 
 ### Documentation snippets test runner
@@ -19,71 +21,12 @@ composer require --dev celema/dev
 ./vendor/bin/docs-test-runner path/to/docs/snippets
 ```
 
-### php-cs-fixer
+### Markdownlint configuration
 
-Add the following to your `.php-cs-fixer.dist.php`:
+Use the shared Markdownlint configuration from the installed package:
 
-```php
-<?php
-
-declare(strict_types=1);
-
-$finder = PhpCsFixer\Finder::create()->in([__DIR__ . '/src', __DIR__ . '/tests']);
-$config = new Celema\Development\PhpCsFixer\Config();
-
-return $config->setFinder($finder);
-```
-
-## Automatically installed development tools
-
-- `psy/psysh` [A REPL for PHP](https://github.com/bobthecow/psysh)
-
-## Shared Configuration Sync
-
-This package provides a centralized way to manage configuration files (like `.editorconfig`, `.markdownlint.jsonc`, etc.) across all projects. Instead of manual copying, use the built-in `Config` helper via Composer.
-
-### 1. Project Setup
-
-Add the sync command to your project's `composer.json` file. It will install the default configs whenever `composer install` or `composer update` is run.
-
-```json
-{
-	"scripts": {
-		"post-install-cmd": ["Celema\\Development\\Config::sync"],
-		"post-update-cmd": ["Celema\\Development\\Config::sync"]
-	}
-}
-```
-
-### 2. Add Prettier Config (Optional)
-
-To also install `.prettierrc`, add the `prettier` script alongside `sync`.
-
-```json
-{
-	"scripts": {
-		"post-install-cmd": [
-			"Celema\\Development\\Config::sync",
-			"Celema\\Development\\Config::prettier"
-		],
-		"post-update-cmd": [
-			"Celema\\Development\\Config::sync",
-			"Celema\\Development\\Config::prettier"
-		]
-	}
-}
-```
-
-Note: `Config` does not overwrite existing files. Delete the file you want to re-deploy and re-run Composer.
-
-### 3. Recommended .gitignore
-
-To ensure the "Source of Truth" remains within this package, add the synced files to your project's `.gitignore`:
-
-```text
-/.editorconfig
-/.markdownlint.jsonc
-/.prettierrc
+```sh
+npx markdownlint-cli2 --config ./vendor/celema/dev/config/markdownlint.jsonc README.md docs/
 ```
 
 ## License
