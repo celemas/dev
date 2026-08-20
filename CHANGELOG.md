@@ -1,6 +1,19 @@
 # Changelog
 
-## [Unreleased](https://codefloe.com/celema/dev/compare/5.0.0...HEAD)
+## [Unreleased](https://codefloe.com/celema/dev/compare/6.0.0...HEAD)
+
+No notable changes since the last release.
+
+## [6.0.0](https://codefloe.com/celema/dev/src/tag/6.0.0) (2026-08-20)
+
+### Breaking Changes
+
+- Stop installing Mago, Psalm, PHPUnit, Coverlyzer, and PsySH for consuming projects. Projects must declare the development tools they use directly.
+
+### Changed
+
+- Use Mago `~1.47.0` to lint this package.
+- Update the README to document the package's current utilities and shared configuration.
 
 ### Removed
 
